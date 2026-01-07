@@ -1,0 +1,401 @@
+{
+  "siteTitle": "Keracunan Makanan",
+  "siteDescription": "Panduan lengkap keselamatan makanan daripada Kementerian Kesihatan Malaysia",
+  "nav": {
+    "home": "Utama",
+    "learn": "Belajar",
+    "interactive": "Interaktif",
+    "help": "Bantuan",
+    "about": "Perihal"
+  },
+  "hero": {
+    "title": "Keselamatan Makanan Bermula Dari Anda",
+    "subtitle": "Panduan interaktif untuk mengenal pasti, mencegah, dan merawat keracunan makanan",
+    "cta": {
+      "checkSymptoms": "Semak Gejala Anda",
+      "learnMore": "Ketahui Lebih Lanjut"
+    }
+  },
+  "features": {
+    "symptomChecker": {
+      "title": "Semak Gejala",
+      "description": "Adakah anda mengalami gejala keracunan makanan? Semak di sini."
+    },
+    "fiveKeys": {
+      "title": "5 Kunci Keselamatan",
+      "description": "Langkah mudah untuk memastikan makanan anda selamat"
+    },
+    "fridgeGame": {
+      "title": "Susun Peti Sejuk",
+      "description": "Permainan interaktif untuk belajar menyimpan makanan dengan betul"
+    },
+    "foodInspector": {
+      "title": "Lihat, Hidu, Rasa",
+      "description": "Belajar mengenal pasti makanan yang telah rosak"
+    }
+  },
+  "fiveKeys": {
+    "title": "5 Kunci Keselamatan Makanan",
+    "subtitle": "Langkah penting untuk memastikan makanan anda selamat",
+    "keys": {
+      "clean": {
+        "title": "Jaga Kebersihan",
+        "description": "Basuh tangan dengan sabun dan air mengalir sebelum menyediakan makanan",
+        "tips": [
+          "Basuh tangan selama 20 saat",
+          "Bersihkan permukaan dan peralatan dapur",
+          "Lindungi makanan dari serangga dan haiwan"
+        ]
+      },
+      "separate": {
+        "title": "Asingkan Makanan",
+        "description": "Asingkan makanan mentah daripada makanan yang telah dimasak",
+        "tips": [
+          "Gunakan papan pemotong berbeza untuk daging dan sayur",
+          "Simpan daging mentah di bahagian bawah peti sejuk",
+          "Gunakan bekas tertutup untuk setiap jenis makanan"
+        ]
+      },
+      "cook": {
+        "title": "Masak Dengan Sempurna",
+        "description": "Masak makanan dengan suhu yang betul untuk membunuh kuman",
+        "tips": [
+          "Pastikan daging dimasak sehingga matang sepenuhnya",
+          "Rebus sup dan kuah sehingga mendidih",
+          "Panaskan semula makanan sehingga panas sepenuhnya"
+        ]
+      },
+      "temperature": {
+        "title": "Simpan Pada Suhu Selamat",
+        "description": "Jangan biarkan makanan pada suhu bilik terlalu lama",
+        "tips": [
+          "Simpan makanan di bawah 5°C atau di atas 60°C",
+          "Jangan biarkan makanan lebih dari 2 jam pada suhu bilik",
+          "Sejukkan makanan yang telah dimasak dalam masa 2 jam"
+        ]
+      },
+      "safe": {
+        "title": "Guna Bahan Selamat",
+        "description": "Pilih bahan mentah yang segar dan air yang bersih",
+        "tips": [
+          "Pilih makanan yang segar dan tidak tamat tempoh",
+          "Gunakan air bersih untuk memasak",
+          "Elakkan susu dan produk tenusu yang tidak dipasteurisasi"
+        ]
+      }
+    }
+  },
+  "symptoms": {
+    "title": "Semak Gejala Anda",
+    "subtitle": "Jawab beberapa soalan untuk mengetahui langkah seterusnya",
+    "questions": {
+      "duration": "Berapa lama anda mengalami gejala ini?",
+      "severity": "Bagaimana tahap keterukan gejala anda?"
+    },
+    "symptomList": {
+      "vomiting": "Muntah",
+      "diarrhea": "Cirit-birit",
+      "fever": "Demam",
+      "stomachPain": "Sakit perut",
+      "nausea": "Loya",
+      "headache": "Sakit kepala",
+      "bloodyStool": "Najis berdarah",
+      "dehydration": "Dehidrasi"
+    },
+    "results": {
+      "mild": {
+        "title": "Gejala Ringan",
+        "advice": "Anda boleh merawat di rumah. Minum banyak air dan berehat."
+      },
+      "moderate": {
+        "title": "Gejala Sederhana",
+        "advice": "Sila dapatkan rawatan di klinik berhampiran."
+      },
+      "severe": {
+        "title": "Gejala Teruk",
+        "advice": "Sila dapatkan rawatan kecemasan segera. Hubungi 999."
+      }
+    }
+  },
+  "bacteria": {
+    "title": "Kenali Bakteria",
+    "subtitle": "Ketahui musuh tersembunyi dalam makanan anda",
+    "cards": {
+      "salmonella": {
+        "name": "Salmonella",
+        "nickname": "Sally Si Sneaky",
+        "habitat": "Telur, ayam, daging",
+        "symptoms": "Cirit-birit, demam, sakit perut",
+        "onset": "6-72 jam"
+      },
+      "ecoli": {
+        "name": "E. coli",
+        "nickname": "Eddie the Evil",
+        "habitat": "Daging mentah, sayur mentah",
+        "symptoms": "Cirit-birit berdarah, muntah",
+        "onset": "1-8 hari"
+      },
+      "vibrio": {
+        "name": "Vibrio",
+        "nickname": "Vivi Seafood Queen",
+        "habitat": "Kerang, tiram, makanan laut",
+        "symptoms": "Cirit-birit, sakit perut, demam",
+        "onset": "4-96 jam"
+      },
+      "staphylococcus": {
+        "name": "Staphylococcus",
+        "nickname": "Staphy Si Tangan Kotor",
+        "habitat": "Nasi, santan, krim",
+        "symptoms": "Muntah, loya, sakit perut",
+        "onset": "30 minit - 8 jam"
+      }
+    }
+  },
+  "highRiskFoods": {
+    "title": "Makanan Berisiko Tinggi",
+    "subtitle": "Makanan yang memerlukan pengendalian khas untuk mengelakkan keracunan",
+    "categories": {
+      "meat": {
+        "title": "Daging & Ayam Mentah",
+        "description": "Daging dan ayam mentah atau separuh masak boleh mengandungi bakteria berbahaya seperti Salmonella dan E. coli.",
+        "prevention": "Masak sepenuhnya sehingga suhu dalaman yang selamat."
+      },
+      "seafood": {
+        "title": "Makanan Laut & Kerang",
+        "description": "Ikan dan kerang mentah mungkin membawa parasit dan bakteria termasuk Vibrio.",
+        "prevention": "Beli dari sumber yang dipercayai dan simpan dalam peti sejuk."
+      },
+      "eggs": {
+        "title": "Telur Mentah",
+        "description": "Telur boleh mengandungi Salmonella di dalam dan di luar kulit.",
+        "prevention": "Masak telur sehingga kuningnya keras. Elakkan makanan dengan telur mentah."
+      },
+      "dairy": {
+        "title": "Tenusu Tidak Dipasteurisasi",
+        "description": "Susu mentah dan keju lembut boleh mengandungi bakteria berbahaya seperti Listeria.",
+        "prevention": "Hanya ambil susu dan produk keju yang dipasteurisasi."
+      }
+    }
+  },
+  "common": {
+    "back": "Kembali",
+    "next": "Seterusnya",
+    "start": "Mula",
+    "restart": "Mula Semula",
+    "submit": "Hantar",
+    "close": "Tutup",
+    "loading": "Memuatkan...",
+    "error": "Ralat berlaku",
+    "success": "Berjaya!",
+    "language": "Bahasa",
+    "search": "Cari",
+    "learnMore": "Ketahui Lebih Lanjut",
+    "playGame": "Main Permainan",
+    "score": "Markah",
+    "level": "Tahap",
+    "correct": "Betul!",
+    "wrong": "Salah!",
+    "tryAgain": "Cuba Lagi"
+  },
+  "footer": {
+    "disclaimer": "Maklumat ini adalah panduan umum sahaja. Sila dapatkan nasihat perubatan profesional jika diperlukan.",
+    "source": "Sumber: Kementerian Kesihatan Malaysia (KKM)",
+    "copyright": "© 2026 Keracunan Makanan. Hak cipta terpelihara."
+  },
+  "fridgeGame": {
+    "title": "Susun Peti Sejuk",
+    "subtitle": "Seret dan lepas item ke rak yang betul untuk keselamatan makanan",
+    "score": "Markah: {score}/{total}",
+    "items": {
+      "milk": "Susu",
+      "yogurt": "Yogurt",
+      "leftovers": "Lebihan Makanan",
+      "cookedMeat": "Daging Masak",
+      "rawMeat": "Daging Mentah",
+      "rawChicken": "Ayam Mentah",
+      "fish": "Ikan Segar",
+      "vegetables": "Sayur-sayuran",
+      "fruits": "Buah-buahan",
+      "eggs": "Telur"
+    },
+    "zones": {
+      "top": "Rak Atas",
+      "middle": "Rak Tengah",
+      "bottom": "Rak Bawah",
+      "drawer": "Laci Sayur"
+    },
+    "feedback": {
+      "correct": "Betul! {item} sesuai diletakkan di sini.",
+      "incorrect": "Salah! {item} sepatutnya diletakkan di tempat lain.",
+      "success": "Tahniah! Peti sejuk anda tersusun dengan selamat.",
+      "reset": "Main Semula"
+    },
+    "education": {
+      "title": "Mengapa susunan ini betul?",
+      "top": "Rak Atas: Makanan sedia dimakan seperti baki makanan, minuman, dan yogurt. Ia tidak perlu dimasak dan tidak akan menitis ke makanan lain.",
+      "middle": "Rak Tengah: Telur dan daging yang telah dimasak. Kawasan ini mempunyai suhu yang konsisten.",
+      "bottom": "Rak Bawah: Daging mentah dan ikan. Ini adalah bahagian paling sejuk dan mengelakkan jus berbahaya menitis ke atas makanan lain.",
+      "drawer": "Laci Sayur: Buah-buahan dan sayur-sayuran. Ia mengekalkan kelembapan untuk kesegaran dan mengasingkannya daripada daging mentah."
+    }
+  },
+  "foodInspectorGame": {
+    "title": "Lihat, Hidu, Rasa",
+    "subtitle": "Gunakan deria anda untuk mengenal pasti jika makanan selamat dimakan",
+    "instructions": "Periksa makanan menggunakan tindakan di bawah. Lihat tanda-tanda kerosakan, hidu bau pelik, atau rasa sedikit (berisiko!). Putuskan untuk MAKAN atau BUANG.",
+    "actions": {
+      "look": "Lihat",
+      "smell": "Hidu",
+      "taste": "Rasa",
+      "eat": "Makan",
+      "throw": "Buang"
+    },
+    "feedback": {
+      "safe": "Betul! Makanan ini selamat dimakan.",
+      "unsafe": "Betul! Keputusan bijak membuang makanan itu.",
+      "safeThrown": "Alamak! Makanan itu sebenarnya selamat.",
+      "unsafeEaten": "Aduh! Anda makan makanan rosak dan mungkin sakit.",
+      "riskyTaste": "Amaran: Merasa makanan rosak boleh menyebabkan sakit walaupun sikit!",
+      "next": "Item Seterusnya"
+    },
+    "items": {
+      "milk": {
+        "name": "Susu",
+        "look": "Ia nampak biasa.",
+        "smell": "Ia berbau masam dan berketul.",
+        "taste": "Rasanya masam dan basi!"
+      },
+      "bread": {
+        "name": "Roti",
+        "look": "Ada bintik hijau kecil pada kulit.",
+        "smell": "Ia berbau agak hapak.",
+        "taste": "Rasanya tawar dan keras."
+      },
+      "chicken": {
+        "name": "Ayam Mentah",
+        "look": "Ia nampak kelabu dan berlendir.",
+        "smell": "Ia mempunyai bau hanyir yang kuat.",
+        "taste": "JANGAN sesekali rasa ayam mentah!"
+      },
+      "soup": {
+        "name": "Sup Sayur",
+        "look": "Ia nampak berwarna-warni dan segar.",
+        "smell": "Ia berbau enak dan menyelerakan.",
+        "taste": "Rasanya sedap!"
+      }
+    }
+  },
+  "quiz": {
+    "title": "Kuiz Keselamatan Makanan",
+    "subtitle": "Uji pengetahuan anda dan jadilah Wira Keselamatan Makanan!",
+    "start": "Mula Kuiz",
+    "next": "Soalan Seterusnya",
+    "finish": "Lihat Keputusan",
+    "retry": "Cuba Lagi",
+    "backToMenu": "Kembali ke Menu Interaktif",
+    "score": "Markah Anda: {score} / {total}",
+    "perfectScore": "Hebat! Anda sememangnya Pakar Keselamatan Makanan!",
+    "goodScore": "Syabas! Anda mempunyai pengetahuan yang baik.",
+    "passScore": "Boleh tahan, tetapi ada ruang untuk penambahbaikan.",
+    "failScore": "Alamak! Anda perlu mengulangi bahan pembelajaran.",
+    "questions": {
+      "q1": {
+        "question": "Berapa lamakah anda perlu membasuh tangan dengan sabun dan air?",
+        "options": {
+          "a": "5 saat",
+          "b": "10 saat",
+          "c": "20 saat",
+          "d": "1 minit"
+        },
+        "explanation": "Anda perlu membasuh tangan sekurang-kurangnya 20 saat (kira-kira masa untuk menyanyi 'Lagu Happy Birthday' dua kali) untuk membasmi kuman dengan berkesan."
+      },
+      "q2": {
+        "question": "Di manakah anda patut menyimpan daging mentah di dalam peti sejuk?",
+        "options": {
+          "a": "Rak atas",
+          "b": "Rak tengah",
+          "c": "Rak bawah",
+          "d": "Laci sayur"
+        },
+        "explanation": "Daging mentah mestilah sentiasa diletakkan di rak paling bawah untuk mengelakkan jus menitis ke atas makanan lain."
+      },
+      "q3": {
+        "question": "Apakah 'Zon Bahaya' bagi suhu makanan?",
+        "options": {
+          "a": "0°C hingga 10°C",
+          "b": "5°C hingga 60°C",
+          "c": "20°C hingga 100°C",
+          "d": "Tiada zon bahaya"
+        },
+        "explanation": "Bakteria membiak paling cepat antara 5°C dan 60°C. Pastikan makanan panas kekal panas (>60°C) dan makanan sejuk kekal sejuk (<5°C)."
+      },
+      "q4": {
+        "question": "Manakah cara paling SELAMAT untuk menyahbeku ayam beku?",
+        "options": {
+          "a": "Di atas meja dapur",
+          "b": "Dalam mangkuk air panas",
+          "c": "Di dalam peti sejuk semalaman",
+          "d": "Di bawah matahari"
+        },
+        "explanation": "Menyahbeku di dalam peti sejuk mengekalkan suhu yang selamat. Suhu bilik atau air panas membolehkan bakteria membiak dengan cepat."
+      },
+      "q5": {
+        "question": "Antara berikut, yang manakah gejala biasa keracunan makanan?",
+        "options": {
+          "a": "Keguguran rambut",
+          "b": "Sakit gigi",
+          "c": "Muntah dan Cirit-birit",
+          "d": "Bersin"
+        },
+        "explanation": "Muntah, cirit-birit, sakit perut, dan demam adalah tanda-tanda paling biasa bagi penyakit bawaan makanan."
+      }
+    }
+  },
+  "findClinic": {
+    "title": "Cari Fasiliti Kesihatan",
+    "subtitle": "Cari klinik dan hospital kerajaan berhampiran.",
+    "search": "Cari nama atau daerah...",
+    "filter": {
+      "state": "Semua Negeri",
+      "type": "Semua Jenis",
+      "hospital": "Hospital",
+      "clinic": "Klinik"
+    },
+    "table": {
+      "name": "Nama Fasiliti",
+      "address": "Alamat",
+      "contact": "Hubungi",
+      "directions": "Dapatkan Arah"
+    },
+    "loading": "Memuatkan data fasiliti...",
+    "error": "Gagal memuatkan data fasiliti. Sila cuba lagi kemudian.",
+    "noResults": "Tiada fasiliti ditemui yang sepadan dengan carian anda."
+  },
+  "emergency": {
+    "title": "Bantuan Kecemasan",
+    "subtitle": "Bantuan segera untuk kes keracunan makanan yang teruk.",
+    "call999": "Hubungi 999",
+    "poisonCentre": "Pusat Racun Negara",
+    "call": "Hubungi",
+    "confirmTitle": "Sahkan Panggilan",
+    "confirmMessage": "Adakah anda pasti mahu menghubungi {number}?",
+    "cancel": "Batal",
+    "dial": "Dail",
+    "firstAid": {
+      "title": "Apa perlu buat sementara menunggu?",
+      "steps": [
+        "Kekal terhidrat: Minum air atau larutan garam penghidratan (ORS) sedikit demi sedikit.",
+        "JANGAN paksa muntah melainkan diarahkan oleh pakar.",
+        "Berehat: Baring mengiring untuk mengelakkan tersedak jika muntah berlaku.",
+        "Simpan sampel: Jika boleh, simpan sampel makanan yang disyaki untuk ujian."
+      ]
+    },
+    "severeSymptoms": "Dapatkan bantuan segera jika anda mengalami:",
+    "symptomsList": [
+      "Cirit-birit berdarah",
+      "Demam panas (melebihi 39°C)",
+      "Muntah kerap menghalang pengambilan cecair",
+      "Tanda dehidrasi (mulut kering, kurang kencing)",
+      "Penglihatan kabur atau lemah otot"
+    ]
+  }
+}

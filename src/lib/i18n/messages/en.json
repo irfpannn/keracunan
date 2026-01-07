@@ -1,0 +1,401 @@
+{
+  "siteTitle": "Food Poisoning",
+  "siteDescription": "Complete food safety guide from the Ministry of Health Malaysia",
+  "nav": {
+    "home": "Home",
+    "learn": "Learn",
+    "interactive": "Interactive",
+    "help": "Help",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Food Safety Starts With You",
+    "subtitle": "An interactive guide to identify, prevent, and treat food poisoning",
+    "cta": {
+      "checkSymptoms": "Check Your Symptoms",
+      "learnMore": "Learn More"
+    }
+  },
+  "features": {
+    "symptomChecker": {
+      "title": "Symptom Checker",
+      "description": "Are you experiencing food poisoning symptoms? Check here."
+    },
+    "fiveKeys": {
+      "title": "5 Keys to Safety",
+      "description": "Simple steps to ensure your food is safe"
+    },
+    "fridgeGame": {
+      "title": "Organize the Fridge",
+      "description": "Interactive game to learn proper food storage"
+    },
+    "foodInspector": {
+      "title": "Look, Smell, Taste",
+      "description": "Learn to identify spoiled food"
+    }
+  },
+  "fiveKeys": {
+    "title": "5 Keys to Food Safety",
+    "subtitle": "Essential steps to keep your food safe",
+    "keys": {
+      "clean": {
+        "title": "Keep Clean",
+        "description": "Wash hands with soap and running water before preparing food",
+        "tips": [
+          "Wash hands for 20 seconds",
+          "Clean kitchen surfaces and utensils",
+          "Protect food from insects and animals"
+        ]
+      },
+      "separate": {
+        "title": "Separate Raw & Cooked",
+        "description": "Keep raw food separate from cooked food",
+        "tips": [
+          "Use different cutting boards for meat and vegetables",
+          "Store raw meat at the bottom of the fridge",
+          "Use sealed containers for each type of food"
+        ]
+      },
+      "cook": {
+        "title": "Cook Thoroughly",
+        "description": "Cook food at the right temperature to kill germs",
+        "tips": [
+          "Ensure meat is cooked all the way through",
+          "Boil soups and gravies until bubbling",
+          "Reheat food until piping hot"
+        ]
+      },
+      "temperature": {
+        "title": "Keep at Safe Temperatures",
+        "description": "Don't leave food at room temperature for too long",
+        "tips": [
+          "Store food below 5°C or above 60°C",
+          "Don't leave food out for more than 2 hours",
+          "Refrigerate cooked food within 2 hours"
+        ]
+      },
+      "safe": {
+        "title": "Use Safe Ingredients",
+        "description": "Choose fresh ingredients and clean water",
+        "tips": [
+          "Choose fresh food that hasn't expired",
+          "Use clean water for cooking",
+          "Avoid unpasteurized milk and dairy products"
+        ]
+      }
+    }
+  },
+  "symptoms": {
+    "title": "Check Your Symptoms",
+    "subtitle": "Answer a few questions to find out your next steps",
+    "questions": {
+      "duration": "How long have you been experiencing these symptoms?",
+      "severity": "How severe are your symptoms?"
+    },
+    "symptomList": {
+      "vomiting": "Vomiting",
+      "diarrhea": "Diarrhea",
+      "fever": "Fever",
+      "stomachPain": "Stomach pain",
+      "nausea": "Nausea",
+      "headache": "Headache",
+      "bloodyStool": "Bloody stool",
+      "dehydration": "Dehydration"
+    },
+    "results": {
+      "mild": {
+        "title": "Mild Symptoms",
+        "advice": "You can treat this at home. Drink plenty of water and rest."
+      },
+      "moderate": {
+        "title": "Moderate Symptoms",
+        "advice": "Please seek treatment at a nearby clinic."
+      },
+      "severe": {
+        "title": "Severe Symptoms",
+        "advice": "Please seek emergency treatment immediately. Call 999."
+      }
+    }
+  },
+  "bacteria": {
+    "title": "Meet the Bacteria",
+    "subtitle": "Know the hidden enemies in your food",
+    "cards": {
+      "salmonella": {
+        "name": "Salmonella",
+        "nickname": "Sally the Sneaky",
+        "habitat": "Eggs, chicken, meat",
+        "symptoms": "Diarrhea, fever, stomach pain",
+        "onset": "6-72 hours"
+      },
+      "ecoli": {
+        "name": "E. coli",
+        "nickname": "Eddie the Evil",
+        "habitat": "Raw meat, raw vegetables",
+        "symptoms": "Bloody diarrhea, vomiting",
+        "onset": "1-8 days"
+      },
+      "vibrio": {
+        "name": "Vibrio",
+        "nickname": "Vivi the Seafood Queen",
+        "habitat": "Shellfish, oysters, seafood",
+        "symptoms": "Diarrhea, stomach pain, fever",
+        "onset": "4-96 hours"
+      },
+      "staphylococcus": {
+        "name": "Staphylococcus",
+        "nickname": "Staphy the Dirty Hands",
+        "habitat": "Rice, coconut milk, cream",
+        "symptoms": "Vomiting, nausea, stomach pain",
+        "onset": "30 minutes - 8 hours"
+      }
+    }
+  },
+  "highRiskFoods": {
+    "title": "High-Risk Foods",
+    "subtitle": "Foods that require special handling to prevent food poisoning",
+    "categories": {
+      "meat": {
+        "title": "Raw Meat & Poultry",
+        "description": "Raw or undercooked meat and poultry can contain harmful bacteria like Salmonella and E. coli.",
+        "prevention": "Cook thoroughly to safe internal temperatures."
+      },
+      "seafood": {
+        "title": "Seafood & Shellfish",
+        "description": "Raw fish and shellfish may carry parasites and bacteria including Vibrio.",
+        "prevention": "Buy from reputable sources and keep refrigerated."
+      },
+      "eggs": {
+        "title": "Raw Eggs",
+        "description": "Eggs can contain Salmonella both inside and on the shell.",
+        "prevention": "Cook eggs until yolks are firm. Avoid foods with raw eggs."
+      },
+      "dairy": {
+        "title": "Unpasteurized Dairy",
+        "description": "Raw milk and soft cheeses can contain dangerous bacteria like Listeria.",
+        "prevention": "Only consume pasteurized milk and cheese products."
+      }
+    }
+  },
+  "common": {
+    "back": "Back",
+    "next": "Next",
+    "start": "Start",
+    "restart": "Restart",
+    "submit": "Submit",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!",
+    "language": "Language",
+    "search": "Search",
+    "learnMore": "Learn More",
+    "playGame": "Play Game",
+    "score": "Score",
+    "level": "Level",
+    "correct": "Correct!",
+    "wrong": "Wrong!",
+    "tryAgain": "Try Again"
+  },
+  "footer": {
+    "disclaimer": "This information is for general guidance only. Please seek professional medical advice if needed.",
+    "source": "Source: Ministry of Health Malaysia (KKM)",
+    "copyright": "© 2026 Food Poisoning Guide. All rights reserved."
+  },
+  "fridgeGame": {
+    "title": "Organize the Fridge",
+    "subtitle": "Drag and drop items to the correct shelf to ensure food safety",
+    "score": "Score: {score}/{total}",
+    "items": {
+      "milk": "Milk",
+      "yogurt": "Yogurt",
+      "leftovers": "Leftovers",
+      "cookedMeat": "Cooked Meat",
+      "rawMeat": "Raw Meat",
+      "rawChicken": "Raw Chicken",
+      "fish": "Fresh Fish",
+      "vegetables": "Vegetables",
+      "fruits": "Fruits",
+      "eggs": "Eggs"
+    },
+    "zones": {
+      "top": "Top Shelf",
+      "middle": "Middle Shelf",
+      "bottom": "Bottom Shelf",
+      "drawer": "Crisper Drawer"
+    },
+    "feedback": {
+      "correct": "Correct! {item} belongs directly here.",
+      "incorrect": "Incorrect! {item} should be placed elsewhere.",
+      "success": "Great job! Your fridge is organized safely.",
+      "reset": "Play Again"
+    },
+    "education": {
+      "title": "Why is this organization correct?",
+      "top": "Top Shelf: Ready-to-eat foods like leftovers, drinks, and yogurt. They don't need cooking and won't drip on other items.",
+      "middle": "Middle Shelf: Eggs and cooked meats. This area has a consistent temperature suitable for these items.",
+      "bottom": "Bottom Shelf: Raw meat and fish. This is the coldest part, and placing them here prevents dangerous juices from dripping onto other food.",
+      "drawer": "Crisper Drawer: Fruits and vegetables. It maintains humidity to keep them fresh and isolates them from raw meats."
+    }
+  },
+  "foodInspectorGame": {
+    "title": "Look, Smell, Taste",
+    "subtitle": "Use your senses to identify if food is safe to eat",
+    "instructions": "Inspect the food item using the actions below. Look for signs of spoilage, smell for odd odors, or taste a tiny amount (risky!). Decide to EAT or THROW.",
+    "actions": {
+      "look": "Look",
+      "smell": "Smell",
+      "taste": "Taste",
+      "eat": "Eat",
+      "throw": "Throw Away"
+    },
+    "feedback": {
+      "safe": "Correct! This food was safe to eat.",
+      "unsafe": "Correct! Good call throwing that away.",
+      "safeThrown": "Oops! That food was actually safe.",
+      "unsafeEaten": "Oh no! You ate spoiled food and might get sick.",
+      "riskyTaste": "Warning: Tasting spoiled food can make you sick even in small amounts!",
+      "next": "Next Item"
+    },
+    "items": {
+      "milk": {
+        "name": "Milk",
+        "look": "It looks normal.",
+        "smell": "It smells sour and chunky.",
+        "taste": "It tastes acidic and spoiled!"
+      },
+      "bread": {
+        "name": "Bread",
+        "look": "There are small green spots on the crust.",
+        "smell": "It smells a bit dusty/musty.",
+        "taste": "It tastes stale."
+      },
+      "chicken": {
+        "name": "Raw Chicken",
+        "look": "It looks a bit gray and slimy.",
+        "smell": "It has a strong, unpleasant ammonia smell.",
+        "taste": "NEVER taste raw chicken!"
+      },
+      "soup": {
+        "name": "Vegetable Soup",
+        "look": "It looks colorful and fresh.",
+        "smell": "It smells delicious and savory.",
+        "taste": "It tastes great!"
+      }
+    }
+  },
+  "quiz": {
+    "title": "Food Safety Quiz",
+    "subtitle": "Test your knowledge and become a certified Food Safety Hero!",
+    "start": "Start Quiz",
+    "next": "Next Question",
+    "finish": "See Results",
+    "retry": "Try Again",
+    "backToMenu": "Back to Interactive Menu",
+    "score": "Your Score: {score} / {total}",
+    "perfectScore": "Amazing! You are a true Food Safety Expert!",
+    "goodScore": "Great job! You know your stuff.",
+    "passScore": "Not bad, but there's room for improvement.",
+    "failScore": "Oh no! You should review the learning materials.",
+    "questions": {
+      "q1": {
+        "question": "How long should you wash your hands with soap and water?",
+        "options": {
+          "a": "5 seconds",
+          "b": "10 seconds",
+          "c": "20 seconds",
+          "d": "1 minute"
+        },
+        "explanation": "You should wash your hands for at least 20 seconds (about the time it takes to sing 'Happy Birthday' twice) to kill germs effectively."
+      },
+      "q2": {
+        "question": "Where should you store raw meat in the refrigerator?",
+        "options": {
+          "a": "Top shelf",
+          "b": "Middle shelf",
+          "c": "Bottom shelf",
+          "d": "Crisper drawer"
+        },
+        "explanation": "Raw meat should always go on the bottom shelf to prevent juices from dripping onto other ready-to-eat foods."
+      },
+      "q3": {
+        "question": "What is the 'Danger Zone' for food temperature?",
+        "options": {
+          "a": "0°C to 10°C",
+          "b": "5°C to 60°C",
+          "c": "20°C to 100°C",
+          "d": "There is no danger zone"
+        },
+        "explanation": "Bacteria grow fastest between 5°C and 60°C. Keep hot food hot (>60°C) and cold food cold (<5°C)."
+      },
+      "q4": {
+        "question": "Which is the SAFEST way to thaw frozen chicken?",
+        "options": {
+          "a": "On the kitchen counter",
+          "b": "In a bowl of hot water",
+          "c": "In the refrigerator overnight",
+          "d": "In the sun"
+        },
+        "explanation": "Thawing in the refrigerator maintains a safe temperature. The counter or hot water allows bacteria to multiply rapidly."
+      },
+      "q5": {
+        "question": "Which of these is a common symptom of food poisoning?",
+        "options": {
+          "a": "Hair loss",
+          "b": "Toothache",
+          "c": "Vomiting and Diarrhea",
+          "d": "Sneezing"
+        },
+        "explanation": "Vomiting, diarrhea, stomach pain, and fever are the most common signs of foodborne illness."
+      }
+    }
+  },
+  "findClinic": {
+    "title": "Find Healthcare Facility",
+    "subtitle": "Locate nearby government clinics and hospitals.",
+    "search": "Search by name or district...",
+    "filter": {
+      "state": "All States",
+      "type": "All Types",
+      "hospital": "Hospital",
+      "clinic": "Clinic"
+    },
+    "table": {
+      "name": "Facility Name",
+      "address": "Address",
+      "contact": "Contact",
+      "directions": "Get Directions"
+    },
+    "loading": "Loading facility data...",
+    "error": "Failed to load facility data. Please try again later.",
+    "noResults": "No facilities found matching your search."
+  },
+  "emergency": {
+    "title": "Emergency Assistance",
+    "subtitle": "Immediate help for severe food poisoning cases.",
+    "call999": "Call 999",
+    "poisonCentre": "National Poison Centre",
+    "call": "Call",
+    "confirmTitle": "Confirm Call",
+    "confirmMessage": "Are you sure you want to call {number}?",
+    "cancel": "Cancel",
+    "dial": "Dial",
+    "firstAid": {
+      "title": "What to do while waiting?",
+      "steps": [
+        "Stay hydrated: Drink small sips of water or oral rehydration solution.",
+        "Do NOT induce vomiting unless instructed by a professional.",
+        "Rest: Lay down on your side to prevent choking if vomiting occurs.",
+        "Keep a sample: If possible, keep a sample of the suspected food for testing."
+      ]
+    },
+    "severeSymptoms": "Seek help immediately if you have:",
+    "symptomsList": [
+      "Bloody diarrhea",
+      "High fever (over 39°C)",
+      "Frequent vomiting preventing liquid intake",
+      "Signs of hydration (dry mouth, little urination)",
+      "Blurry vision or muscle weakness"
+    ]
+  }
+}

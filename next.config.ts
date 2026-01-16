@@ -1,9 +1,9 @@
-import type { NextConfig } from "next"; // 1. Import the type
+import type { NextConfig } from "next";
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin();
+// Point specifically to your custom location
+const withNextIntl = createNextIntlPlugin('./src/lib/i18n/request.ts');
 
-// 2. Explicitly type the variable
 const nextConfig: NextConfig = {
   output: "standalone",
 };

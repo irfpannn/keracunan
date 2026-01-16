@@ -32,6 +32,10 @@
     "foodInspector": {
       "title": "Lihat, Hidu, Rasa",
       "description": "Belajar mengenal pasti makanan yang telah rosak"
+    },
+    "bessLocator": {
+      "title": "Cari Premis BeSS",
+      "description": "Cari premis makanan yang selamat dan bersijil berhampiran anda"
     }
   },
   "fiveKeys": {
@@ -397,5 +401,36 @@
       "Tanda dehidrasi (mulut kering, kurang kencing)",
       "Penglihatan kabur atau lemah otot"
     ]
+  },
+  "bessLocator": {
+    "title": "Premis Bersijil BeSS",
+    "subtitle": "Cari premis makanan yang diiktiraf BeSS (Bersih, Selamat, Sihat).",
+    "search": "Cari mengikut nama syarikat atau alamat...",
+    "filter": {
+      "state": "Semua Negeri",
+      "status": "Status Sijil",
+      "active": "Aktif",
+      "expired": "Tamat Tempoh"
+    },
+    "table": {
+      "company": "Nama Syarikat",
+      "address": "Alamat Perniagaan",
+      "contact": "Hubungi",
+      "certDate": "Tarikh Sijil",
+      "expiryDate": "Tarikh Tamat",
+      "certNo": "No. Sijil",
+      "viewOnMap": "Lihat di Peta"
+    },
+    "loading": "Memuatkan data BeSS...",
+    "error": "Gagal memuatkan data BeSS. Sila cuba lagi kemudian.",
+    "noResults": "Tiada premis ditemui yang sepadan dengan carian anda.",
+    "info": {
+      "title": "Apa itu BeSS?",
+      "description": "BeSS (Bersih, Selamat, Sihat) adalah program pengiktirafan keselamatan makanan oleh Kementerian Kesihatan Malaysia. Premis dengan sijil BeSS telah memenuhi standard keselamatan dan kebersihan makanan.",
+      "benefits": "Cari premis bersijil BeSS untuk pilihan makanan yang lebih selamat."
+    },
+    "totalPremises": "Jumlah Premis",
+    "showList": "Tunjuk Senarai",
+    "showMap": "Tunjuk Peta"
   }
 }

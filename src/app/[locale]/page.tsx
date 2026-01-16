@@ -7,7 +7,8 @@ import {
   Eye, 
   ArrowRight,
   AlertTriangle,
-  Sparkles
+  Sparkles,
+  MapPin
 } from 'lucide-react';
 import { Button, Card, CardContent, Badge } from '@/components/ui';
 
@@ -45,7 +46,15 @@ export default function HomePage() {
       href: `${localePath}/interaktif/lihat-hidu-rasa`,
       variant: 'outline' as const,
     },
+    {
+      icon: MapPin,
+      title: t('features.bessLocator.title'),
+      description: t('features.bessLocator.description'),
+      href: `${localePath}/bantuan/bess`,
+      variant: 'default' as const,
+    },
   ];
+
 
   return (
     <div className="min-h-screen">
@@ -99,7 +108,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {features.map((feature, index) => (
               <Link key={index} href={feature.href}>
                 <Card className="h-full hover:shadow-md transition-shadow cursor-pointer">

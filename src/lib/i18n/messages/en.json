@@ -32,6 +32,10 @@
     "foodInspector": {
       "title": "Look, Smell, Taste",
       "description": "Learn to identify spoiled food"
+    },
+    "bessLocator": {
+      "title": "BeSS Store Locator",
+      "description": "Find certified safe food premises near you"
     }
   },
   "fiveKeys": {
@@ -397,5 +401,36 @@
       "Signs of hydration (dry mouth, little urination)",
       "Blurry vision or muscle weakness"
     ]
+  },
+  "bessLocator": {
+    "title": "BeSS Certified Premises",
+    "subtitle": "Find food premises certified with BeSS (Clean, Safe, Healthy) recognition.",
+    "search": "Search by company name or address...",
+    "filter": {
+      "state": "All States",
+      "status": "Certification Status",
+      "active": "Active",
+      "expired": "Expired"
+    },
+    "table": {
+      "company": "Company Name",
+      "address": "Business Address",
+      "contact": "Contact",
+      "certDate": "Certified Date",
+      "expiryDate": "Expiry Date",
+      "certNo": "Certificate No.",
+      "viewOnMap": "View on Map"
+    },
+    "loading": "Loading BeSS data...",
+    "error": "Failed to load BeSS data. Please try again later.",
+    "noResults": "No premises found matching your search.",
+    "info": {
+      "title": "What is BeSS?",
+      "description": "BeSS (Bersih, Selamat, Sihat) is a food safety recognition program by the Ministry of Health Malaysia. Premises with BeSS certification have met food safety and hygiene standards.",
+      "benefits": "Look for BeSS certified premises for safer food choices."
+    },
+    "totalPremises": "Total Premises",
+    "showList": "Show List",
+    "showMap": "Show Map"
   }
 }

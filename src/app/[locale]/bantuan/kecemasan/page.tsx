@@ -94,7 +94,7 @@ export default function EmergencyPage() {
                 <DialogHeader>
                     <DialogTitle>{t('confirmTitle')}</DialogTitle>
                     <DialogDescription>
-                        {t('confirmMessage', { number: callDetails?.name })}
+                        {t('confirmMessage', { number: callDetails?.name ?? '' })}
                     </DialogDescription>
                 </DialogHeader>
                 <DialogFooter className="gap-2 sm:gap-0">

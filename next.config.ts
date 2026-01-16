@@ -1,9 +1,11 @@
+import type { NextConfig } from "next"; // 1. Import the type
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin('./src/lib/i18n/request.ts');
+const withNextIntl = createNextIntlPlugin();
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// 2. Explicitly type the variable
+const nextConfig: NextConfig = {
+  output: "standalone",
 };
 
 export default withNextIntl(nextConfig);

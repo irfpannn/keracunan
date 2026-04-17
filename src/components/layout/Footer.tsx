@@ -1,8 +1,11 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { ShieldCheck, Heart } from 'lucide-react';
+import Link from 'next/link';
 
 export function Footer() {
   const t = useTranslations('footer');
+  const locale = useLocale();
+  const localePath = locale === 'ms' ? '' : `/${locale}`;
 
   return (
     <footer className="bg-foreground text-muted pt-10 pb-24 md:pb-10">
@@ -41,6 +44,11 @@ export function Footer() {
                 <a href="/interaktif" className="hover:text-primary transition-colors">
                   Permainan Interaktif
                 </a>
+              </li>
+              <li>
+                <Link href={`${localePath}/admin/login`} className="hover:text-primary transition-colors">
+                  {t('admin_login')}
+                </Link>
               </li>
             </ul>
           </div>

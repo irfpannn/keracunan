@@ -6,7 +6,9 @@
     "learn": "Learn",
     "interactive": "Interactive",
     "help": "Help",
-    "about": "About"
+    "about": "About",
+    "new_report": "New Report",
+    "reports_feed": "Reports Feed"
   },
   "hero": {
     "title": "Food Safety Starts With You",
@@ -204,7 +206,8 @@
   "footer": {
     "disclaimer": "This information is for general guidance only. Please seek professional medical advice if needed.",
     "source": "Source: Ministry of Health Malaysia (KKM)",
-    "copyright": "© 2026 Food Poisoning Guide. All rights reserved."
+    "copyright": "© 2026 Food Poisoning Guide. All rights reserved.",
+    "admin_login": "Admin Login"
   },
   "fridgeGame": {
     "title": "Organize the Fridge",
@@ -432,5 +435,66 @@
     "totalPremises": "Total Premises",
     "showList": "Show List",
     "showMap": "Show Map"
+  },
+  "reports": {
+    "public_new": {
+      "title": "Report a Restaurant",
+      "subtitle": "Provide details about an incident or concern to help us keep food safe.",
+      "photo_label": "Photo Evidence (Max 5MB)",
+      "photo_hint_1": "Click to upload image",
+      "photo_hint_2": "JPEG, PNG, WebP up to 5MB",
+      "location_label": "Restaurant Location / Name",
+      "location_placeholder": "e.g., Warung Nasi Kandar, Jalan Sultan...",
+      "remarks_label": "Remarks / Description",
+      "remarks_placeholder": "Describe the incident or concern...",
+      "submit_btn": "Submit Report",
+      "submitting_btn": "Submitting Report...",
+      "error_fill_all": "Please fill all fields and upload an image.",
+      "error_size": "Image must be less than 5MB."
+    },
+    "public_feed": {
+      "title": "Public Reports Feed",
+      "subtitle": "Track the status of restaurant incident reports from the community.",
+      "no_reports_title": "No reports yet",
+      "no_reports_subtitle": "Be the first to submit a report if you encounter any issues.",
+      "col_location": "Location",
+      "col_submitted": "Submitted",
+      "col_remarks": "Remarks",
+      "col_status": "Current Status",
+      "col_timeline": "Timeline",
+      "modal_title": "Incident Timeline",
+      "no_image": "No Image Provided",
+      "history": "Status History",
+      "user_remarks": "User Remarks"
+    },
+    "admin_login": {
+      "title": "Admin Dashboard",
+      "subtitle": "Sign in to manage restaurant reports",
+      "email_label": "Email address",
+      "password_label": "Password",
+      "login_btn": "Log in"
+    },
+    "admin_dashboard": {
+      "title": "Admin Dashboard",
+      "subtitle": "Manage public submissions",
+      "signout": "Sign out",
+      "no_reports_title": "No reports found",
+      "no_reports_subtitle": "When users submit reports, they will appear here.",
+      "col_action": "Action",
+      "modal_title": "Report Details",
+      "update_status": "Update Status",
+      "new_status_label": "New Status",
+      "admin_remarks_label": "Admin Remarks (Optional)",
+      "admin_remarks_placeholder": "Reason for update... visible to the public.",
+      "cancel_btn": "Cancel",
+      "save_btn": "Save Update",
+      "statuses": {
+        "Open": "Open",
+        "Pending Visit": "Pending Visit",
+        "Action Taken": "Action Taken",
+        "Resolved": "Resolved",
+        "Rejected": "Rejected"
+      }
+    }
   }
 }

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
-import { Home, BookOpen, Gamepad2, LifeBuoy } from 'lucide-react';
+import { Home, BookOpen, Gamepad2, LifeBuoy, FilePlus, List } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
@@ -18,6 +18,8 @@ export function MobileNav() {
     { href: `${localePath}/belajar`, label: t('learn'), icon: BookOpen },
     { href: `${localePath}/interaktif`, label: t('interactive'), icon: Gamepad2 },
     { href: `${localePath}/bantuan`, label: t('help'), icon: LifeBuoy },
+    { href: `${localePath}/reports/new`, label: t('new_report'), icon: FilePlus },
+    { href: `${localePath}/reports`, label: t('reports_feed'), icon: List },
   ];
 
   const isActive = (href: string) => {

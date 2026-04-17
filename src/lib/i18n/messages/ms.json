@@ -6,7 +6,9 @@
     "learn": "Belajar",
     "interactive": "Interaktif",
     "help": "Bantuan",
-    "about": "Perihal"
+    "about": "Perihal",
+    "new_report": "Lapor Restoran",
+    "reports_feed": "Aduan Awam"
   },
   "hero": {
     "title": "Keselamatan Makanan Bermula Dari Anda",
@@ -204,7 +206,8 @@
   "footer": {
     "disclaimer": "Maklumat ini adalah panduan umum sahaja. Sila dapatkan nasihat perubatan profesional jika diperlukan.",
     "source": "Sumber: Kementerian Kesihatan Malaysia (KKM)",
-    "copyright": "© 2026 Keracunan Makanan. Hak cipta terpelihara."
+    "copyright": "© 2026 Keracunan Makanan. Hak cipta terpelihara.",
+    "admin_login": "Log Masuk Admin"
   },
   "fridgeGame": {
     "title": "Susun Peti Sejuk",
@@ -432,5 +435,66 @@
     "totalPremises": "Jumlah Premis",
     "showList": "Tunjuk Senarai",
     "showMap": "Tunjuk Peta"
+  },
+  "reports": {
+    "public_new": {
+      "title": "Lapor Restoran",
+      "subtitle": "Beri butiran tentang insiden atau kebimbangan untuk membantu kami menjaga keselamatan makanan.",
+      "photo_label": "Bukti Bergambar (Maks 5MB)",
+      "photo_hint_1": "Klik untuk muat naik gambar",
+      "photo_hint_2": "JPEG, PNG, WebP (Maks 5MB)",
+      "location_label": "Lokasi / Nama Restoran",
+      "location_placeholder": "cth., Warung Nasi Kandar, Jalan Sultan...",
+      "remarks_label": "Catatan / Penerangan",
+      "remarks_placeholder": "Terangkan insiden atau kebimbangan...",
+      "submit_btn": "Hantar Laporan",
+      "submitting_btn": "Sedang Menghantar...",
+      "error_fill_all": "Sila isi semua ruangan dan muat naik gambar.",
+      "error_size": "Gambar mesti kurang daripada 5MB."
+    },
+    "public_feed": {
+      "title": "Aduan Awam",
+      "subtitle": "Jejaki status laporan insiden restoran daripada komuniti.",
+      "no_reports_title": "Tiada laporan",
+      "no_reports_subtitle": "Jadilah yang pertama untuk menghantar laporan jika anda menemui sebarang masalah.",
+      "col_location": "Lokasi",
+      "col_submitted": "Dihantar",
+      "col_remarks": "Catatan",
+      "col_status": "Status Semasa",
+      "col_timeline": "Garis Masa",
+      "modal_title": "Garis Masa Insiden",
+      "no_image": "Tiada Gambar Disertakan",
+      "history": "Sejarah Status",
+      "user_remarks": "Catatan Pengguna"
+    },
+    "admin_login": {
+      "title": "Papan Pemuka Admin",
+      "subtitle": "Log masuk untuk mengurus laporan restoran",
+      "email_label": "Alamat E-mel",
+      "password_label": "Kata laluan",
+      "login_btn": "Log Masuk"
+    },
+    "admin_dashboard": {
+      "title": "Papan Pemuka Admin",
+      "subtitle": "Urus aduan awam",
+      "signout": "Log Keluar",
+      "no_reports_title": "Tiada laporan",
+      "no_reports_subtitle": "Apabila pengguna menghantar laporan, ia akan dipaparkan di sini.",
+      "col_action": "Tindakan",
+      "modal_title": "Butiran Laporan",
+      "update_status": "Kemaskini Status",
+      "new_status_label": "Status Baru",
+      "admin_remarks_label": "Catatan Admin (Arahan Pilihan)",
+      "admin_remarks_placeholder": "Sebab kemaskini... dipaparkan kepada umum.",
+      "cancel_btn": "Batal",
+      "save_btn": "Simpan Laporan",
+      "statuses": {
+        "Open": "Buka",
+        "Pending Visit": "Menunggu Lawatan",
+        "Action Taken": "Tindakan Diambil",
+        "Resolved": "Selesai",
+        "Rejected": "Ditolak"
+      }
+    }
   }
 }

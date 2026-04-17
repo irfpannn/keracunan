@@ -29,6 +29,8 @@ export function Header() {
     { href: `${localePath}/belajar`, label: t('learn') },
     { href: `${localePath}/interaktif`, label: t('interactive') },
     { href: `${localePath}/bantuan`, label: t('help') },
+    { href: `${localePath}/reports/new`, label: t('new_report') },
+    { href: `${localePath}/reports`, label: t('reports_feed') },
   ];
 
   return (

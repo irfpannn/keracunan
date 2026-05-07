@@ -14,14 +14,14 @@
     "title": "Food Safety Starts With You",
     "subtitle": "An interactive guide to identify, prevent, and treat food poisoning",
     "cta": {
-      "checkSymptoms": "Check Your Symptoms",
+      "checkSymptoms": "Symptom Report",
       "learnMore": "Learn More"
     }
   },
   "features": {
-    "symptomChecker": {
-      "title": "Symptom Checker",
-      "description": "Are you experiencing food poisoning symptoms? Check here."
+    "symptomReport": {
+      "title": "Symptom Report",
+      "description": "Submit a symptom report with details about your symptoms and where you ate."
     },
     "fiveKeys": {
       "title": "5 Keys to Safety",
@@ -92,8 +92,8 @@
     }
   },
   "symptoms": {
-    "title": "Check Your Symptoms",
-    "subtitle": "Answer a few questions to find out your next steps",
+    "title": "Symptom Report",
+    "subtitle": "Submit a report about your symptoms and where you ate",
     "questions": {
       "duration": "How long have you been experiencing these symptoms?",
       "severity": "How severe are your symptoms?"
@@ -450,7 +450,10 @@
       "submit_btn": "Submit Report",
       "submitting_btn": "Submitting Report...",
       "error_fill_all": "Please fill all fields and upload an image.",
-      "error_size": "Image must be less than 5MB."
+      "error_size": "Image must be less than 5MB.",
+      "email_label": "Reporter Email",
+      "email_placeholder": "you@example.com",
+      "error_invalid_email": "Please enter a valid email address."
     },
     "public_feed": {
       "title": "Public Reports Feed",
@@ -458,6 +461,7 @@
       "no_reports_title": "No reports yet",
       "no_reports_subtitle": "Be the first to submit a report if you encounter any issues.",
       "col_location": "Location",
+      "col_type": "Report Type",
       "col_submitted": "Submitted",
       "col_remarks": "Remarks",
       "col_status": "Current Status",
@@ -465,7 +469,8 @@
       "modal_title": "Incident Timeline",
       "no_image": "No Image Provided",
       "history": "Status History",
-      "user_remarks": "User Remarks"
+      "user_remarks": "User Remarks",
+      "public_details": "Public Details"
     },
     "admin_login": {
       "title": "Admin Dashboard",
@@ -482,6 +487,7 @@
       "no_reports_subtitle": "When users submit reports, they will appear here.",
       "col_action": "Action",
       "modal_title": "Report Details",
+      "user_remarks": "User Remarks",
       "update_status": "Update Status",
       "new_status_label": "New Status",
       "admin_remarks_label": "Admin Remarks (Optional)",

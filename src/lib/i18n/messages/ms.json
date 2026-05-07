@@ -14,14 +14,14 @@
     "title": "Keselamatan Makanan Bermula Dari Anda",
     "subtitle": "Panduan interaktif untuk mengenal pasti, mencegah, dan merawat keracunan makanan",
     "cta": {
-      "checkSymptoms": "Semak Gejala Anda",
+      "checkSymptoms": "Laporan Gejala",
       "learnMore": "Ketahui Lebih Lanjut"
     }
   },
   "features": {
-    "symptomChecker": {
-      "title": "Semak Gejala",
-      "description": "Adakah anda mengalami gejala keracunan makanan? Semak di sini."
+    "symptomReport": {
+      "title": "Laporan Gejala",
+      "description": "Hantar laporan gejala dengan maklumat tentang gejala anda dan tempat anda makan."
     },
     "fiveKeys": {
       "title": "5 Kunci Keselamatan",
@@ -92,8 +92,8 @@
     }
   },
   "symptoms": {
-    "title": "Semak Gejala Anda",
-    "subtitle": "Jawab beberapa soalan untuk mengetahui langkah seterusnya",
+    "title": "Laporan Gejala",
+    "subtitle": "Hantar laporan tentang gejala dan tempat anda makan",
     "questions": {
       "duration": "Berapa lama anda mengalami gejala ini?",
       "severity": "Bagaimana tahap keterukan gejala anda?"
@@ -450,7 +450,10 @@
       "submit_btn": "Hantar Laporan",
       "submitting_btn": "Sedang Menghantar...",
       "error_fill_all": "Sila isi semua ruangan dan muat naik gambar.",
-      "error_size": "Gambar mesti kurang daripada 5MB."
+      "error_size": "Gambar mesti kurang daripada 5MB.",
+      "email_label": "E-mel Pelapor",
+      "email_placeholder": "anda@contoh.com",
+      "error_invalid_email": "Sila masukkan alamat e-mel yang sah."
     },
     "public_feed": {
       "title": "Aduan Awam",
@@ -458,6 +461,7 @@
       "no_reports_title": "Tiada laporan",
       "no_reports_subtitle": "Jadilah yang pertama untuk menghantar laporan jika anda menemui sebarang masalah.",
       "col_location": "Lokasi",
+      "col_type": "Jenis Laporan",
       "col_submitted": "Dihantar",
       "col_remarks": "Catatan",
       "col_status": "Status Semasa",
@@ -465,7 +469,8 @@
       "modal_title": "Garis Masa Insiden",
       "no_image": "Tiada Gambar Disertakan",
       "history": "Sejarah Status",
-      "user_remarks": "Catatan Pengguna"
+      "user_remarks": "Catatan Pengguna",
+      "public_details": "Butiran Awam"
     },
     "admin_login": {
       "title": "Papan Pemuka Admin",
@@ -482,6 +487,7 @@
       "no_reports_subtitle": "Apabila pengguna menghantar laporan, ia akan dipaparkan di sini.",
       "col_action": "Tindakan",
       "modal_title": "Butiran Laporan",
+      "user_remarks": "Catatan Pengguna",
       "update_status": "Kemaskini Status",
       "new_status_label": "Status Baru",
       "admin_remarks_label": "Catatan Admin (Arahan Pilihan)",

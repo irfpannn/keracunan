@@ -1,11 +1,11 @@
-import { useTranslations, useLocale } from 'next-intl';
-import { ShieldCheck, Heart } from 'lucide-react';
-import Link from 'next/link';
+import { useTranslations, useLocale } from "next-intl";
+import { ShieldCheck, Heart } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
-  const t = useTranslations('footer');
+  const t = useTranslations("footer");
   const locale = useLocale();
-  const localePath = locale === 'ms' ? '' : `/${locale}`;
+  const localePath = locale === "ms" ? "" : `/${locale}`;
 
   return (
     <footer className="bg-foreground text-muted pt-10 pb-24 md:pb-10">
@@ -22,32 +22,46 @@ export function Footer() {
               </span>
             </div>
             <p className="text-xs text-muted-foreground max-w-[280px] leading-relaxed">
-              {t('disclaimer')}
+              {t("disclaimer")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-background font-semibold text-sm mb-3">Pautan Pantas</h4>
+            <h4 className="text-background font-semibold text-sm mb-3">
+              Pautan Pantas
+            </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <a href="/belajar/5-kunci" className="hover:text-primary transition-colors">
+                <a
+                  href="/belajar/5-kunci"
+                  className="hover:text-primary transition-colors"
+                >
                   5 Kunci Keselamatan
                 </a>
               </li>
               <li>
-                <a href="/bantuan/gejala" className="hover:text-primary transition-colors">
-                  Semak Gejala
+                <a
+                  href={`${localePath}/reports/new?tab=symptom`}
+                  className="hover:text-primary transition-colors"
+                >
+                  {locale === "ms" ? "Laporan Gejala" : "Symptom Report"}
                 </a>
               </li>
               <li>
-                <a href="/interaktif" className="hover:text-primary transition-colors">
+                <a
+                  href="/interaktif"
+                  className="hover:text-primary transition-colors"
+                >
                   Permainan Interaktif
                 </a>
               </li>
               <li>
-                <Link href={`${localePath}/admin/login`} className="hover:text-primary transition-colors">
-                  {t('admin_login')}
+                <Link
+                  href={`${localePath}/admin/login`}
+                  className="hover:text-primary transition-colors"
+                >
+                  {t("admin_login")}
                 </Link>
               </li>
             </ul>
@@ -55,7 +69,9 @@ export function Footer() {
 
           {/* Emergency */}
           <div>
-            <h4 className="text-background font-semibold text-sm mb-3">Kecemasan</h4>
+            <h4 className="text-background font-semibold text-sm mb-3">
+              Kecemasan
+            </h4>
             <div className="bg-destructive/15 border border-destructive/30 rounded-lg p-3">
               <p className="text-destructive font-bold text-xl">999</p>
               <p className="text-xs text-muted-foreground">
@@ -66,11 +82,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-muted-foreground/20 pt-5 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-xs text-muted-foreground">
-            {t('source')}
-          </p>
+          <p className="text-xs text-muted-foreground">{t("source")}</p>
           <p className="text-xs text-muted-foreground flex items-center gap-1">
-            Made with <Heart className="w-3 h-3 text-destructive" /> for Malaysia
+            Made with <Heart className="w-3 h-3 text-destructive" /> for
+            Malaysia
           </p>
         </div>
       </div>

@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
-import { useState } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowLeft,
@@ -18,6 +17,7 @@ import {
   FileText,
   Loader2,
   MapPin,
+  Mail,
   Utensils,
   User,
 } from "lucide-react";
@@ -52,25 +52,17 @@ const symptoms: Symptom[] = [
 ];
 
 const durationOptions = [
-  {
-    value: "short",
-    labelEn: "Less than 6 hours",
-    labelMs: "Kurang dari 6 jam",
-  },
-  { value: "medium", labelEn: "6 - 24 hours", labelMs: "6 - 24 jam" },
-  {
-    value: "long",
-    labelEn: "More than 24 hours",
-    labelMs: "Lebih dari 24 jam",
-  },
+  { value: "short" },
+  { value: "medium" },
+  { value: "long" },
 ];
 
 export default function SymptomReport() {
   const t = useTranslations();
-  const locale = useLocale();
 
   const [step, setStep] = useState(0);
   const [reporterName, setReporterName] = useState("");
+  const [reporterEmail, setReporterEmail] = useState("");
   const [symptomDate, setSymptomDate] = useState("");
   const [foodEaten, setFoodEaten] = useState("");
   const [eatenAt, setEatenAt] = useState("");
@@ -83,53 +75,44 @@ export default function SymptomReport() {
   const [error, setError] = useState("");
 
   const labels = {
-    reportDetails: locale === "ms" ? "Maklumat laporan" : "Report details",
-    name: locale === "ms" ? "Nama" : "Name",
-    namePlaceholder: locale === "ms" ? "Nama penuh anda" : "Your full name",
-    symptomDate:
-      locale === "ms" ? "Tarikh gejala dirasai" : "Date symptoms were felt",
-    foodEaten:
-      locale === "ms"
-        ? "Makanan yang dimakan sebelum gejala"
-        : "Food eaten before symptoms",
-    foodEatenPlaceholder:
-      locale === "ms"
-        ? "cth., nasi lemak, ayam goreng..."
-        : "e.g., nasi lemak, fried chicken...",
-    eatenAt:
-      locale === "ms"
-        ? "Tempat anda makan sebelum gejala"
-        : "Where you ate before symptoms",
-    eatenAtPlaceholder:
-      locale === "ms"
-        ? "cth., nama kedai, alamat, rumah..."
-        : "e.g., shop name, address, home...",
-    remarks: locale === "ms" ? "Maklumat tambahan" : "Additional details",
-    remarksPlaceholder:
-      locale === "ms"
-        ? "Kongsikan apa-apa butiran lain yang membantu..."
-        : "Share any other helpful details...",
-    fillRequired:
-      locale === "ms"
-        ? "Sila isi semua maklumat laporan yang diperlukan."
-        : "Please fill in all required report details.",
-    submitFailed:
-      locale === "ms"
-        ? "Gagal menghantar laporan. Sila cuba lagi."
-        : "Failed to submit report. Please try again.",
-    submitting:
-      locale === "ms" ? "Menghantar laporan..." : "Submitting report...",
-    submitted:
-      locale === "ms"
-        ? "Laporan gejala telah dihantar untuk semakan admin."
-        : "Symptom report has been submitted for admin review.",
-    reportId: locale === "ms" ? "ID Laporan" : "Report ID",
+    reportDetails: t("symptoms.form.reportDetails"),
+    name: t("symptoms.form.name"),
+    namePlaceholder: t("symptoms.form.namePlaceholder"),
+    email: t("symptoms.form.email"),
+    emailPlaceholder: t("symptoms.form.emailPlaceholder"),
+    symptomDate: t("symptoms.form.symptomDate"),
+    foodEaten: t("symptoms.form.foodEaten"),
+    foodEatenPlaceholder: t("symptoms.form.foodEatenPlaceholder"),
+    eatenAt: t("symptoms.form.eatenAt"),
+    eatenAtPlaceholder: t("symptoms.form.eatenAtPlaceholder"),
+    remarks: t("symptoms.form.remarks"),
+    remarksPlaceholder: t("symptoms.form.remarksPlaceholder"),
+    selectSymptomsTitle: t("symptoms.form.selectSymptomsTitle"),
+    fillRequired: t("symptoms.form.errorFillRequired"),
+    invalidEmail: t("symptoms.form.errorInvalidEmail"),
+    submitFailed: t("symptoms.form.errorSubmitFailed"),
+    submitting: t("symptoms.form.submitting"),
+    submitted: t("symptoms.form.submitted"),
+    reportId: t("symptoms.form.reportId"),
+  };
+
+  const summaryLabels = {
+    symptoms: t("symptoms.summary.symptoms"),
+    duration: t("symptoms.summary.duration"),
+    severity: t("symptoms.summary.severity"),
+    notes: t("symptoms.summary.notes"),
   };
 
   const inputClassName =
     "w-full rounded-lg border border-border bg-background px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20";
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isEmailValid = emailRegex.test(reporterEmail.trim());
   const isReportDetailsValid =
-    reporterName.trim() && symptomDate && foodEaten.trim() && eatenAt.trim();
+    reporterName.trim() &&
+    reporterEmail.trim() &&
+    symptomDate &&
+    foodEaten.trim() &&
+    eatenAt.trim();
 
   const toggleSymptom = (symptomId: string) => {
     setSelectedSymptoms((prev) =>
@@ -165,7 +148,7 @@ export default function SymptomReport() {
   const getDurationLabel = (value: string) => {
     const option = durationOptions.find((item) => item.value === value);
     if (!option) return value;
-    return locale === "ms" ? option.labelMs : option.labelEn;
+    return t(`symptoms.duration.${option.value}`);
   };
 
   const buildRemarks = (severity: Exclude<Severity, null>) => {
@@ -174,11 +157,11 @@ export default function SymptomReport() {
     );
 
     return [
-      `${locale === "ms" ? "Gejala" : "Symptoms"}: ${symptomNames.join(", ")}`,
-      `${locale === "ms" ? "Tempoh" : "Duration"}: ${getDurationLabel(duration)}`,
-      `${locale === "ms" ? "Tahap" : "Severity"}: ${severity}`,
+      `${summaryLabels.symptoms}: ${symptomNames.join(", ")}`,
+      `${summaryLabels.duration}: ${getDurationLabel(duration)}`,
+      `${summaryLabels.severity}: ${severity}`,
       remarks.trim()
-        ? `${locale === "ms" ? "Catatan" : "Notes"}: ${remarks.trim()}`
+        ? `${summaryLabels.notes}: ${remarks.trim()}`
         : "",
     ]
       .filter(Boolean)
@@ -195,6 +178,7 @@ export default function SymptomReport() {
     try {
       const id = await submitSymptomReport({
         reporterName: reporterName.trim(),
+        reporterEmail: reporterEmail.trim(),
         symptomDate,
         foodEaten: foodEaten.trim(),
         eatenAt: eatenAt.trim(),
@@ -223,6 +207,10 @@ export default function SymptomReport() {
         setError(labels.fillRequired);
         return;
       }
+      if (!isEmailValid) {
+        setError(labels.invalidEmail);
+        return;
+      }
       setStep(1);
       return;
     }
@@ -247,6 +235,7 @@ export default function SymptomReport() {
   const handleRestart = () => {
     setStep(0);
     setReporterName("");
+    setReporterEmail("");
     setSymptomDate("");
     setFoodEaten("");
     setEatenAt("");
@@ -314,6 +303,20 @@ export default function SymptomReport() {
                         value={reporterName}
                         onChange={(e) => setReporterName(e.target.value)}
                         placeholder={labels.namePlaceholder}
+                        className={cn(inputClassName, "pl-9")}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">{labels.email}</label>
+                    <div className="relative">
+                      <Mail className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+                      <input
+                        type="email"
+                        value={reporterEmail}
+                        onChange={(e) => setReporterEmail(e.target.value)}
+                        placeholder={labels.emailPlaceholder}
                         className={cn(inputClassName, "pl-9")}
                       />
                     </div>
@@ -401,9 +404,7 @@ export default function SymptomReport() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">
-                    {locale === "ms"
-                      ? "Pilih gejala anda:"
-                      : "Select your symptoms:"}
+                    {labels.selectSymptomsTitle}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">

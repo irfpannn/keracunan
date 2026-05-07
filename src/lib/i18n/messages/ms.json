@@ -98,6 +98,38 @@
       "duration": "Berapa lama anda mengalami gejala ini?",
       "severity": "Bagaimana tahap keterukan gejala anda?"
     },
+    "form": {
+      "reportDetails": "Maklumat laporan",
+      "name": "Nama",
+      "namePlaceholder": "Nama penuh anda",
+      "email": "E-mel",
+      "emailPlaceholder": "anda@contoh.com",
+      "symptomDate": "Tarikh gejala dirasai",
+      "foodEaten": "Makanan yang dimakan sebelum gejala",
+      "foodEatenPlaceholder": "cth., nasi lemak, ayam goreng...",
+      "eatenAt": "Tempat anda makan sebelum gejala",
+      "eatenAtPlaceholder": "cth., nama kedai, alamat, rumah...",
+      "remarks": "Maklumat tambahan",
+      "remarksPlaceholder": "Kongsikan apa-apa butiran lain yang membantu...",
+      "selectSymptomsTitle": "Pilih gejala anda:",
+      "errorFillRequired": "Sila isi semua maklumat laporan yang diperlukan.",
+      "errorInvalidEmail": "Sila masukkan alamat e-mel yang sah.",
+      "errorSubmitFailed": "Gagal menghantar laporan. Sila cuba lagi.",
+      "submitting": "Menghantar laporan...",
+      "submitted": "Laporan gejala telah dihantar untuk semakan admin.",
+      "reportId": "ID Laporan"
+    },
+    "duration": {
+      "short": "Kurang dari 6 jam",
+      "medium": "6 - 24 jam",
+      "long": "Lebih dari 24 jam"
+    },
+    "summary": {
+      "symptoms": "Gejala",
+      "duration": "Tempoh",
+      "severity": "Tahap",
+      "notes": "Catatan"
+    },
     "symptomList": {
       "vomiting": "Muntah",
       "diarrhea": "Cirit-birit",
@@ -494,6 +526,44 @@
       "admin_remarks_placeholder": "Sebab kemaskini... dipaparkan kepada umum.",
       "cancel_btn": "Batal",
       "save_btn": "Simpan Laporan",
+      "no_image": "Tiada Gambar Disertakan",
+      "symptom_report": "Laporan Gejala",
+      "error_update_status": "Gagal mengemaskini status.",
+      "fields": {
+        "name": "Nama",
+        "symptom_date": "Tarikh Gejala",
+        "food_eaten": "Makanan Dimakan",
+        "severity": "Tahap Keterukan",
+        "symptoms": "Gejala",
+        "duration": "Tempoh",
+        "reporter_email": "E-mel Pelapor",
+        "ate_at": "Tempat Makan",
+        "location": "Lokasi",
+        "date_submitted": "Tarikh Dihantar"
+      },
+      "tabs": {
+        "restaurant": "Kebersihan Restoran",
+        "restaurant_desc": "Laporan tentang kebersihan restoran dan keadaan keselamatan makanan.",
+        "symptom": "Laporan Gejala",
+        "symptom_desc": "Laporan gejala peribadi dengan butiran makanan dan lokasi makan.",
+        "reports_count": "{count} laporan"
+      },
+      "empty_state": {
+        "restaurant_title": "Tiada laporan kebersihan restoran",
+        "restaurant_desc": "Laporan kebersihan restoran akan dipaparkan di sini.",
+        "symptom_title": "Tiada laporan gejala",
+        "symptom_desc": "Laporan gejala yang dihantar dari halaman Laporan Gejala akan dipaparkan di sini."
+      },
+      "table": {
+        "restaurant_location": "Restoran / Lokasi",
+        "reporter": "Pelapor",
+        "reporter_email": "E-mel Pelapor",
+        "symptom_date": "Tarikh Gejala",
+        "food_eaten": "Makanan Dimakan",
+        "submitted": "Dihantar",
+        "remarks": "Catatan",
+        "status": "Status"
+      },
       "statuses": {
         "Open": "Buka",
         "Pending Visit": "Menunggu Lawatan",

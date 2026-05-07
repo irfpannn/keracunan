@@ -70,6 +70,7 @@ export const submitReport = async (
 
 export interface SymptomReportInput {
   reporterName: string;
+  reporterEmail: string;
   symptomDate: string;
   foodEaten: string;
   eatenAt: string;
@@ -90,6 +91,7 @@ export const submitSymptomReport = async (
     remarks: input.remarks,
     createdAt: now,
     reporterName: input.reporterName,
+    reporterEmail: input.reporterEmail || "",
     symptomDate: input.symptomDate,
     foodEaten: input.foodEaten,
     eatenAt: input.eatenAt,

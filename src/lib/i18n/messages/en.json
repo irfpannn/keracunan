@@ -98,6 +98,38 @@
       "duration": "How long have you been experiencing these symptoms?",
       "severity": "How severe are your symptoms?"
     },
+    "form": {
+      "reportDetails": "Report details",
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "symptomDate": "Date symptoms were felt",
+      "foodEaten": "Food eaten before symptoms",
+      "foodEatenPlaceholder": "e.g., nasi lemak, fried chicken...",
+      "eatenAt": "Where you ate before symptoms",
+      "eatenAtPlaceholder": "e.g., shop name, address, home...",
+      "remarks": "Additional details",
+      "remarksPlaceholder": "Share any other helpful details...",
+      "selectSymptomsTitle": "Select your symptoms:",
+      "errorFillRequired": "Please fill in all required report details.",
+      "errorInvalidEmail": "Please enter a valid email address.",
+      "errorSubmitFailed": "Failed to submit report. Please try again.",
+      "submitting": "Submitting report...",
+      "submitted": "Symptom report has been submitted for admin review.",
+      "reportId": "Report ID"
+    },
+    "duration": {
+      "short": "Less than 6 hours",
+      "medium": "6 - 24 hours",
+      "long": "More than 24 hours"
+    },
+    "summary": {
+      "symptoms": "Symptoms",
+      "duration": "Duration",
+      "severity": "Severity",
+      "notes": "Notes"
+    },
     "symptomList": {
       "vomiting": "Vomiting",
       "diarrhea": "Diarrhea",
@@ -494,6 +526,44 @@
       "admin_remarks_placeholder": "Reason for update... visible to the public.",
       "cancel_btn": "Cancel",
       "save_btn": "Save Update",
+      "no_image": "No Image Provided",
+      "symptom_report": "Symptom Report",
+      "error_update_status": "Failed to update status.",
+      "fields": {
+        "name": "Name",
+        "symptom_date": "Symptom Date",
+        "food_eaten": "Food Eaten",
+        "severity": "Severity",
+        "symptoms": "Symptoms",
+        "duration": "Duration",
+        "reporter_email": "Reporter Email",
+        "ate_at": "Ate At",
+        "location": "Location",
+        "date_submitted": "Date Submitted"
+      },
+      "tabs": {
+        "restaurant": "Restaurant Hygiene",
+        "restaurant_desc": "Reports about restaurant cleanliness and food safety conditions.",
+        "symptom": "Symptom Reports",
+        "symptom_desc": "Private symptom submissions with food and eating-location details.",
+        "reports_count": "{count} reports"
+      },
+      "empty_state": {
+        "restaurant_title": "No restaurant hygiene reports",
+        "restaurant_desc": "Restaurant hygiene submissions will appear here.",
+        "symptom_title": "No symptom reports",
+        "symptom_desc": "Symptom reports submitted from the Symptom Report page will appear here."
+      },
+      "table": {
+        "restaurant_location": "Restaurant / Location",
+        "reporter": "Reporter",
+        "reporter_email": "Reporter Email",
+        "symptom_date": "Symptom Date",
+        "food_eaten": "Food Eaten",
+        "submitted": "Submitted",
+        "remarks": "Remarks",
+        "status": "Status"
+      },
       "statuses": {
         "Open": "Open",
         "Pending Visit": "Pending Visit",

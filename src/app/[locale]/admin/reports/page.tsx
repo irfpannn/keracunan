@@ -34,9 +34,9 @@ import {
 
 type ReportTypeFilter = "restaurant" | "symptom";
 
-const getReportTitle = (report: Report) => {
+const getReportTitle = (report: Report, t: any) => {
   if (report.type === "symptom") {
-    return report.reporterName || "Symptom Report";
+    return report.reporterName || t("symptom_report");
   }
 
   return report.location;
@@ -92,9 +92,9 @@ function ReportModal({
 
   const symptomDurationLabel =
     {
-      short: "Less than 6 hours",
-      medium: "6 - 24 hours",
-      long: "More than 24 hours",
+      short: tAll("symptoms.duration.short"),
+      medium: tAll("symptoms.duration.medium"),
+      long: tAll("symptoms.duration.long"),
     }[report.symptomDuration || ""] ||
     report.symptomDuration ||
     "-";
@@ -125,35 +125,57 @@ function ReportModal({
         </DialogHeader>
 
         <div className="mt-4 space-y-6">
-          {/* Image */}
-          <div className="h-64 bg-gray-100 rounded-xl overflow-hidden relative">
-            {report.image ? (
-              <img
-                src={report.image}
-                alt="Report"
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <div className="flex h-full items-center justify-center text-gray-400">
-                No Image Provided
+          {report.type === "symptom" && (
+            <div className="flex justify-end">
+              <div className="flex items-center px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gray-100 border border-gray-200 shadow-sm">
+                <span
+                  className={`mr-1.5 w-2.5 h-2.5 rounded-full ${
+                    currentStatus === "Action Taken" ||
+                    currentStatus === "Resolved"
+                      ? "bg-green-500"
+                      : currentStatus === "Rejected"
+                        ? "bg-red-500"
+                        : currentStatus === "Open"
+                          ? "bg-blue-500"
+                          : "bg-amber-500"
+                  }`}
+                />
+                {tStatus(currentStatus)}
               </div>
-            )}
-            <div className="absolute top-3 right-3 flex items-center px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/95 backdrop-blur shadow-sm">
-              <span
-                className={`mr-1.5 w-2.5 h-2.5 rounded-full ${
-                  currentStatus === "Action Taken" ||
-                  currentStatus === "Resolved"
-                    ? "bg-green-500"
-                    : currentStatus === "Rejected"
-                      ? "bg-red-500"
-                      : currentStatus === "Open"
-                        ? "bg-blue-500"
-                        : "bg-amber-500"
-                }`}
-              />
-              {tStatus(currentStatus)}
             </div>
-          </div>
+          )}
+
+          {/* Image */}
+          {report.type !== "symptom" && (
+            <div className="h-64 bg-gray-100 rounded-xl overflow-hidden relative">
+              {report.image ? (
+                <img
+                  src={report.image}
+                  alt="Report"
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="flex h-full items-center justify-center text-gray-400">
+                  {t("no_image")}
+                </div>
+              )}
+              <div className="absolute top-3 right-3 flex items-center px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/95 backdrop-blur shadow-sm">
+                <span
+                  className={`mr-1.5 w-2.5 h-2.5 rounded-full ${
+                    currentStatus === "Action Taken" ||
+                    currentStatus === "Resolved"
+                      ? "bg-green-500"
+                      : currentStatus === "Rejected"
+                        ? "bg-red-500"
+                        : currentStatus === "Open"
+                          ? "bg-blue-500"
+                          : "bg-amber-500"
+                  }`}
+                />
+                {tStatus(currentStatus)}
+              </div>
+            </div>
+          )}
 
           {/* Details */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -161,7 +183,7 @@ function ReportModal({
               <>
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
-                    <User className="w-4 h-4 mr-1.5 text-red-500" /> Name
+                    <User className="w-4 h-4 mr-1.5 text-red-500" /> {t("fields.name")}
                   </h4>
                   <p className="text-sm text-gray-600">
                     {report.reporterName || "-"}
@@ -170,7 +192,7 @@ function ReportModal({
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
                     <CalendarDays className="w-4 h-4 mr-1.5 text-red-500" />{" "}
-                    Symptom Date
+                    {t("fields.symptom_date")}
                   </h4>
                   <p className="text-sm text-gray-600">
                     {report.symptomDate || "-"}
@@ -178,8 +200,7 @@ function ReportModal({
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
-                    <Utensils className="w-4 h-4 mr-1.5 text-red-500" /> Food
-                    Eaten
+                    <Utensils className="w-4 h-4 mr-1.5 text-red-500" /> {t("fields.food_eaten")}
                   </h4>
                   <p className="text-sm text-gray-600">
                     {report.foodEaten || "-"}
@@ -188,7 +209,7 @@ function ReportModal({
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
                     <AlertTriangle className="w-4 h-4 mr-1.5 text-red-500" />{" "}
-                    Severity
+                    {t("fields.severity")}
                   </h4>
                   <p className="text-sm text-gray-600 capitalize">
                     {report.symptomSeverity || "-"}
@@ -197,13 +218,13 @@ function ReportModal({
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
                     <ClipboardList className="w-4 h-4 mr-1.5 text-red-500" />{" "}
-                    Symptoms
+                    {t("fields.symptoms")}
                   </h4>
                   <p className="text-sm text-gray-600">{symptomNames || "-"}</p>
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
-                    <Clock className="w-4 h-4 mr-1.5 text-red-500" /> Duration
+                    <Clock className="w-4 h-4 mr-1.5 text-red-500" /> {t("fields.duration")}
                   </h4>
                   <p className="text-sm text-gray-600">
                     {symptomDurationLabel}
@@ -213,15 +234,22 @@ function ReportModal({
             )}
             <div>
               <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
+                <User className="w-4 h-4 mr-1.5 text-red-500" /> {t("fields.reporter_email")}
+              </h4>
+              <p className="text-sm text-gray-600">
+                {report.reporterEmail || "-"}
+              </p>
+            </div>
+            <div>
+              <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
                 <MapPin className="w-4 h-4 mr-1.5 text-red-500" />{" "}
-                {report.type === "symptom" ? "Ate At" : "Location"}
+                {report.type === "symptom" ? t("fields.ate_at") : t("fields.location")}
               </h4>
               <p className="text-sm text-gray-600">{report.location}</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-gray-900 mb-1 flex items-center">
-                <Clock className="w-4 h-4 mr-1.5 text-gray-400" /> Date
-                Submitted
+                <Clock className="w-4 h-4 mr-1.5 text-gray-400" /> {t("fields.date_submitted")}
               </h4>
               <p className="text-sm text-gray-600">
                 {new Date(report.createdAt).toLocaleString()}
@@ -347,7 +375,7 @@ export default function AdminDashboardPage() {
       await updateReportStatus(reportId, newStatus, adminRemarks);
     } catch (error) {
       console.error("Failed to update status", error);
-      alert("Failed to update status.");
+      alert(t("error_update_status"));
     }
   };
 
@@ -400,11 +428,11 @@ export default function AdminDashboardPage() {
                   : "text-gray-600 hover:bg-gray-50"
               }`}
             >
-              <span className="block">Restaurant Hygiene</span>
+              <span className="block">{t("tabs.restaurant")}</span>
               <span
                 className={`text-xs ${activeReportType === "restaurant" ? "text-red-100" : "text-gray-400"}`}
               >
-                {restaurantReports.length} reports
+                {t("tabs.reports_count", { count: restaurantReports.length })}
               </span>
             </button>
             <button
@@ -416,18 +444,18 @@ export default function AdminDashboardPage() {
                   : "text-gray-600 hover:bg-gray-50"
               }`}
             >
-              <span className="block">Symptom Reports</span>
+              <span className="block">{t("tabs.symptom")}</span>
               <span
                 className={`text-xs ${activeReportType === "symptom" ? "text-red-100" : "text-gray-400"}`}
               >
-                {symptomReports.length} reports
+                {t("tabs.reports_count", { count: symptomReports.length })}
               </span>
             </button>
           </div>
           <p className="px-2 text-sm text-gray-500">
             {activeReportType === "restaurant"
-              ? "Reports about restaurant cleanliness and food safety conditions."
-              : "Private symptom submissions with food and eating-location details."}
+              ? t("tabs.restaurant_desc")
+              : t("tabs.symptom_desc")}
           </p>
         </div>
 
@@ -440,13 +468,13 @@ export default function AdminDashboardPage() {
             <ClipboardList className="w-12 h-12 text-gray-300 mx-auto mb-4" />
             <h3 className="text-lg font-medium text-gray-900">
               {activeReportType === "restaurant"
-                ? "No restaurant hygiene reports"
-                : "No symptom reports"}
+                ? t("empty_state.restaurant_title")
+                : t("empty_state.symptom_title")}
             </h3>
             <p className="text-gray-500 mt-1">
               {activeReportType === "restaurant"
-                ? "Restaurant hygiene submissions will appear here."
-                : "Symptom reports submitted from the Symptom Report page will appear here."}
+                ? t("empty_state.restaurant_desc")
+                : t("empty_state.symptom_desc")}
             </p>
           </div>
         ) : (
@@ -457,20 +485,24 @@ export default function AdminDashboardPage() {
                   <tr className="bg-gray-50/50 border-b border-gray-200 text-xs uppercase tracking-wider text-gray-500">
                     <th className="px-6 py-4 font-medium">
                       {activeReportType === "restaurant"
-                        ? "Restaurant / Location"
-                        : "Reporter"}
+                        ? t("table.restaurant_location")
+                        : t("table.reporter")}
                     </th>
                     {activeReportType === "symptom" && (
                       <>
-                        <th className="px-6 py-4 font-medium">Symptom Date</th>
-                        <th className="px-6 py-4 font-medium">Food Eaten</th>
+                        <th className="px-6 py-4 font-medium">{t("table.reporter_email")}</th>
+                        <th className="px-6 py-4 font-medium">{t("table.symptom_date")}</th>
+                        <th className="px-6 py-4 font-medium">{t("table.food_eaten")}</th>
                       </>
                     )}
-                    <th className="px-6 py-4 font-medium">Submitted</th>
+                    <th className="px-6 py-4 font-medium">{t("table.submitted")}</th>
                     {activeReportType === "restaurant" && (
-                      <th className="px-6 py-4 font-medium">Remarks</th>
+                      <th className="px-6 py-4 font-medium">{t("table.remarks")}</th>
                     )}
-                    <th className="px-6 py-4 font-medium">Status</th>
+                    {activeReportType === "restaurant" && (
+                      <th className="px-6 py-4 font-medium">{t("table.reporter_email")}</th>
+                    )}
+                    <th className="px-6 py-4 font-medium">{t("table.status")}</th>
                     <th className="px-6 py-4 font-medium text-center">
                       {t("col_action")}
                     </th>
@@ -496,14 +528,20 @@ export default function AdminDashboardPage() {
                             )}
                             <span
                               className="font-medium text-gray-900 text-sm max-w-[200px] truncate"
-                              title={getReportTitle(report)}
+                              title={getReportTitle(report, t)}
                             >
-                              {getReportTitle(report)}
+                              {getReportTitle(report, t)}
                             </span>
                           </div>
                         </td>
                         {activeReportType === "symptom" && (
                           <>
+                            <td
+                              className="px-6 py-4 align-middle text-sm text-gray-600 max-w-xs truncate"
+                              title={report.reporterEmail || "-"}
+                            >
+                              {report.reporterEmail || "-"}
+                            </td>
                             <td className="px-6 py-4 align-middle text-sm text-gray-600 whitespace-nowrap">
                               {report.symptomDate || "-"}
                             </td>
@@ -526,6 +564,14 @@ export default function AdminDashboardPage() {
                             title={getReportSummary(report)}
                           >
                             {getReportSummary(report)}
+                          </td>
+                        )}
+                        {activeReportType === "restaurant" && (
+                          <td
+                            className="px-6 py-4 align-middle text-sm text-gray-600 max-w-xs truncate"
+                            title={report.reporterEmail || "-"}
+                          >
+                            {report.reporterEmail || "-"}
                           </td>
                         )}
                         <td className="px-6 py-4 align-middle">

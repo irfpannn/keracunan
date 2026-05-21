@@ -14,11 +14,15 @@
     "title": "Keselamatan Makanan Bermula Dari Anda",
     "subtitle": "Panduan interaktif untuk mengenal pasti, mencegah, dan merawat keracunan makanan",
     "cta": {
-      "checkSymptoms": "Laporan Gejala",
+      "checkSymptoms": "Pemeriksa Gejala",
       "learnMore": "Ketahui Lebih Lanjut"
     }
   },
   "features": {
+    "symptomChecker": {
+      "title": "Pemeriksa Gejala",
+      "description": "Semak tahap keterukan gejala keracunan makanan anda dan dapatkan nasihat."
+    },
     "symptomReport": {
       "title": "Laporan Gejala",
       "description": "Hantar laporan gejala dengan maklumat tentang gejala anda dan tempat anda makan."
@@ -153,6 +157,70 @@
         "title": "Gejala Teruk",
         "advice": "Sila dapatkan rawatan kecemasan segera. Hubungi 999."
       }
+    }
+  },
+  "symptomChecker": {
+    "title": "Pemeriksa Keterukan Gejala",
+    "subtitle": "Semak tahap keterukan gejala anda dan dapatkan panduan profesional",
+    "intro": {
+      "title": "Nilai Gejala Anda",
+      "description": "Alat ini membantu anda menilai tahap keterukan gejala keracunan makanan anda berdasarkan garis panduan Kementerian Kesihatan Malaysia (KKM) dan mengarahkan anda kepada tindakan yang sewajarnya.",
+      "disclaimer": "Penafian: Alat ini hanya memberikan panduan am dan bukan pengganti nasihat, diagnosis, atau rawatan perubatan profesional.",
+      "start": "Mula Penilaian"
+    },
+    "symptoms": {
+      "title": "Pilih Gejala Anda",
+      "description": "Pilih semua gejala yang sedang anda alami:",
+      "severeWarning": "Amaran: Najis berdarah dan dehidrasi melampau adalah gejala kritikal."
+    },
+    "duration": {
+      "title": "Pilih Tempoh",
+      "description": "Berapa lama anda telah mengalami gejala ini?"
+    },
+    "results": {
+      "title": "Keputusan Penilaian",
+      "severityLabel": "Tahap Keterukan Dinilai",
+      "mild": {
+        "title": "Keterukan Ringan",
+        "description": "Gejala anda adalah ringan dan biasanya boleh diuruskan di rumah dengan rehat dan hidrasi yang betul.",
+        "action": "Pemulihan di rumah dinasihatkan."
+      },
+      "moderate": {
+        "title": "Keterukan Sederhana",
+        "description": "Gejala anda adalah sederhana. Anda harus diperiksa oleh profesional kesihatan.",
+        "action": "Dapatkan rawatan di klinik dinasihatkan."
+      },
+      "severe": {
+        "title": "Keterukan Tinggi (Bahaya)",
+        "description": "Gejala anda adalah teruk. Anda memerlukan penilaian perubatan segera.",
+        "action": "Rawatan perubatan segera diperlukan!"
+      }
+    },
+    "advice": {
+      "title": "Nasihat yang Disyorkan",
+      "mildTips": [
+        "Hidrasi: Minum air bersih, sup kosong, atau Garam Penghidratan Oral (ORS) sedikit demi sedikit tetapi kerap.",
+        "Berehat: Biarkan badan anda pulih dengan berehat sepuasnya.",
+        "Diet mudah: Makan makanan lembut seperti bubur, roti bakar, nasi, atau pisang (diet BRAT) setelah muntah reda.",
+        "Elakkan: Jauhi makanan berminyak, pedas, produk tenusu, kafein, dan minuman beralkohol."
+      ],
+      "moderateTips": [
+        "Dapatkan rawatan: Lawati klinik swasta berhampiran atau Klinik Kesihatan kerajaan.",
+        "Hidrasi berterusan: Teruskan minum air atau ORS untuk menggantikan cecair yang hilang.",
+        "Pantau keadaan: Jejaki gejala anda. Jika bertambah buruk, sila ke kecemasan dengan segera."
+      ],
+      "severeTips": [
+        "Pergi segera: Terus ke Jabatan Kecemasan hospital terdekat atau hubungi 999.",
+        "JANGAN paksa muntah: Ini boleh menyebabkan kerengsaan lanjut atau tersedak.",
+        "Hidrasi dengan berhati-hati: Hirup sedikit cecair jika mampu, tetapi utamakan bantuan perubatan."
+      ]
+    },
+    "actions": {
+      "call999": "Hubungi 999 (Kecemasan)",
+      "findClinic": "Cari Klinik Berhampiran",
+      "reportIncident": "Lapor Insiden",
+      "reportIncidentDesc": "Adakah anda jatuh sakit selepas makan di restoran? Laporkan untuk membantu menjaga keselamatan orang awam.",
+      "startOver": "Mula Semula"
     }
   },
   "bacteria": {

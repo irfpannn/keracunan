@@ -11,12 +11,12 @@ export default function HelpPage() {
   const helpItems = [
     {
       icon: Stethoscope,
-      title: locale === "ms" ? "Laporan Gejala" : "Symptom Report",
+      title: locale === "ms" ? "Pemeriksa Gejala" : "Symptom Checker",
       description:
         locale === "ms"
-          ? "Hantar laporan gejala dengan maklumat dan lokasi makan"
-          : "Submit a symptom report with details and where you ate",
-      href: `${localePath}/reports/new?tab=symptom`,
+          ? "Semak tahap keterukan gejala anda dan dapatkan nasihat"
+          : "Check the severity of your symptoms and get advice",
+      href: `${localePath}/bantuan/gejala`,
     },
     {
       icon: MapPin,

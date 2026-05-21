@@ -14,11 +14,15 @@
     "title": "Food Safety Starts With You",
     "subtitle": "An interactive guide to identify, prevent, and treat food poisoning",
     "cta": {
-      "checkSymptoms": "Symptom Report",
+      "checkSymptoms": "Symptom Checker",
       "learnMore": "Learn More"
     }
   },
   "features": {
+    "symptomChecker": {
+      "title": "Symptom Checker",
+      "description": "Check the severity of your food poisoning symptoms and get advice."
+    },
     "symptomReport": {
       "title": "Symptom Report",
       "description": "Submit a symptom report with details about your symptoms and where you ate."
@@ -153,6 +157,70 @@
         "title": "Severe Symptoms",
         "advice": "Please seek emergency treatment immediately. Call 999."
       }
+    }
+  },
+  "symptomChecker": {
+    "title": "Symptom Severity Checker",
+    "subtitle": "Check the severity of your symptoms and get professional guidance",
+    "intro": {
+      "title": "Evaluate Your Symptoms",
+      "description": "This tool helps you evaluate the severity of your food poisoning symptoms based on Ministry of Health Malaysia (KKM) guidelines and directs you to appropriate action.",
+      "disclaimer": "Disclaimer: This tool provides general guidance only and is not a substitute for professional medical advice, diagnosis, or treatment.",
+      "start": "Start Assessment"
+    },
+    "symptoms": {
+      "title": "Select Your Symptoms",
+      "description": "Choose all the symptoms you are currently experiencing:",
+      "severeWarning": "Warning: Bloody stool and extreme dehydration are critical symptoms."
+    },
+    "duration": {
+      "title": "Select Duration",
+      "description": "How long have you been experiencing these symptoms?"
+    },
+    "results": {
+      "title": "Assessment Results",
+      "severityLabel": "Calculated Severity",
+      "mild": {
+        "title": "Mild Severity",
+        "description": "Your symptoms are mild and can typically be managed at home with proper rest and hydration.",
+        "action": "Home recovery advised."
+      },
+      "moderate": {
+        "title": "Moderate Severity",
+        "description": "Your symptoms are moderate. You should be examined by a healthcare professional.",
+        "action": "Visit a clinic advised."
+      },
+      "severe": {
+        "title": "Severe Severity",
+        "description": "Your symptoms are severe. You require immediate medical evaluation.",
+        "action": "Urgent medical attention required!"
+      }
+    },
+    "advice": {
+      "title": "Recommended Advice",
+      "mildTips": [
+        "Hydrate: Drink small, frequent sips of water, clear broths, or Oral Rehydration Salts (ORS).",
+        "Rest: Allow your body to recover by resting as much as possible.",
+        "Bland diet: Eat small portions of plain foods like porridge, toast, rice, or bananas (BRAT diet) once vomiting stops.",
+        "Avoid: Stay away from oily, spicy, dairy, caffeine, and alcoholic foods or drinks."
+      ],
+      "moderateTips": [
+        "Seek care: Visit a nearby general practitioner or government health clinic (Klinik Kesihatan).",
+        "Hydrate constantly: Continue sipping water or ORS to replace lost fluids.",
+        "Monitor: Keep track of your symptoms. If they worsen, proceed to emergency immediately."
+      ],
+      "severeTips": [
+        "Go immediately: Head directly to the nearest hospital Emergency Department or call 999.",
+        "Do NOT induce vomiting: This can cause further irritation or choking.",
+        "Rehydrate cautiously: Sip small amounts of fluids if possible, but prioritize getting medical help."
+      ]
+    },
+    "actions": {
+      "call999": "Call 999 (Emergency)",
+      "findClinic": "Find Nearby Clinic",
+      "reportIncident": "Report Incident",
+      "reportIncidentDesc": "Did you get sick from eating at a restaurant? Report it to help keep the public safe.",
+      "startOver": "Start Over"
     }
   },
   "bacteria": {

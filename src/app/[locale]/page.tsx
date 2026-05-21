@@ -20,9 +20,9 @@ export default function HomePage() {
   const features = [
     {
       icon: Stethoscope,
-      title: t("features.symptomReport.title"),
-      description: t("features.symptomReport.description"),
-      href: `${localePath}/reports/new?tab=symptom`,
+      title: t("features.symptomChecker.title"),
+      description: t("features.symptomChecker.description"),
+      href: `${localePath}/bantuan/gejala`,
       variant: "destructive" as const,
     },
     {
@@ -76,7 +76,7 @@ export default function HomePage() {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
               <Button size="lg" asChild>
-                <Link href={`${localePath}/reports/new?tab=symptom`}>
+                <Link href={`${localePath}/bantuan/gejala`}>
                   {t("hero.cta.checkSymptoms")}
                   <ArrowRight className="w-4 h-4" />
                 </Link>

@@ -1,21 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
-import { useLocale } from "next-intl";
-import { useRouter } from "@/lib/i18n/navigation";
+import SymptomChecker from "@/components/bantuan/SymptomChecker";
 
-export default function SymptomReportRedirect() {
-  const router = useRouter();
-  const locale = useLocale();
-  const localePath = locale === "ms" ? "" : `/${locale}`;
-
-  useEffect(() => {
-    router.replace(`${localePath}/reports/new?tab=symptom`);
-  }, [router, localePath]);
-
+export default function GejalaPage() {
   return (
-    <div className="min-h-[40vh] flex items-center justify-center text-sm text-gray-500">
-      Redirecting to the Symptom Report...
+    <div className="min-h-screen bg-gradient-to-b from-background via-background to-accent/20 py-8">
+      <div className="container mx-auto">
+        <SymptomChecker />
+      </div>
     </div>
   );
 }
